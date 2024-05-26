@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/ElasticSearch.Api.props" />
+</Project>

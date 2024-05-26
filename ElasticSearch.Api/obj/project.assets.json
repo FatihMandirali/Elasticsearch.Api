@@ -700,11 +700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api.csproj",
-      "projectName": "ElasticSearch.Nest.Api",
-      "projectPath": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api.csproj",
+      "projectUniqueName": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/ElasticSearch.Api.csproj",
+      "projectName": "ElasticSearch.Api",
+      "projectPath": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/ElasticSearch.Api.csproj",
       "packagesPath": "/Users/fatihmandirali/.nuget/packages/",
-      "outputPath": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api/obj/",
+      "outputPath": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fatihmandirali/.nuget/NuGet/NuGet.Config"

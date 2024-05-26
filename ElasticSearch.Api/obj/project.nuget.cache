@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wHa18vFbCV9HWlZ9zsfiSgwoPpnNa6HfCpc86m2AyZjyj+Vkc3Oo5BKUHm1hxofWwbz9kIHhgILwegaLKyMZaA==",
+  "dgSpecHash": "xq8dcmQ2wepHfV8NizMik0DhL33g+95cDzBAYCXq6NTmAxYhWrZ+6Sn+qUU8q9yvEZrmQ/tcuUuAy++I5y75wg==",
   "success": true,
-  "projectFilePath": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api/ElasticSearch.Nest.Api.csproj",
+  "projectFilePath": "/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/ElasticSearch.Api.csproj",
   "expectedPackageFiles": [
     "/Users/fatihmandirali/.nuget/packages/elasticsearch.net/7.17.5/elasticsearch.net.7.17.5.nupkg.sha512",
     "/Users/fatihmandirali/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
