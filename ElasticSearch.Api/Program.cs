@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddElastic(builder.Configuration);
 builder.Services.AddScoped<ProductRepository>();
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ECommerceRepository>();
 builder.Services.AddLogging();
 
 

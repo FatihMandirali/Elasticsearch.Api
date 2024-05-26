@@ -9,35 +9,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2ffdc42-33c1-4d2f-9367-d5c6cbf08a21" name="Changes" comment="edit">
+      <change afterPath="$PROJECT_DIR$/ElasticSearch.Api/Controller/ECommerceController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ElasticSearch.Api/Model/ECommerce.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ElasticSearch.Nest.Api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ElasticSearch.Nest.Api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/ElasticSearch.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/ElasticSearch.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/Extension/ElasticsearchExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/Extension/ElasticsearchExt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/Model/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/Model/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/Model/ProductFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/Model/ProductFeature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/Service/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/Service/ProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/Elasticsearch.Net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/bin/Debug/net8.0/Nest.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ref/ElasticSearch.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/ref/ElasticSearch.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/refint/ElasticSearch.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/refint/ElasticSearch.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/ElasticSearch.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/ElasticSearch.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch.Api/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +42,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ElasticSearch.Api/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fcbf4f8a5ab54375abcfa46e8f5896b536c00/e8/f34fa4dc/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -63,7 +50,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2gu3Qb1hPCMIS1wQrqY3kutHd9P" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -129,7 +118,7 @@
       <updated>1716533619964</updated>
       <workItem from="1716533621046" duration="608000" />
       <workItem from="1716535102267" duration="9898000" />
-      <workItem from="1716702476225" duration="2652000" />
+      <workItem from="1716702476225" duration="10729000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -155,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716703183753</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit">
+      <option name="closed" value="true" />
+      <created>1716705457306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716705457306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,30 +196,56 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ElasticSearch.Api/Repository/ProductRepository.cs</url>
-          <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ProductRepository.cs" containingFunctionPresentation="Method 'SaveAsync'">
+          <url>file://$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs</url>
+          <line>77</line>
+          <properties documentPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs" containingFunctionPresentation="Method 'TermPrefixQuery'">
             <startOffsets>
-              <option value="634" />
+              <option value="2466" />
             </startOffsets>
             <endOffsets>
-              <option value="660" />
+              <option value="2608" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ElasticSearch.Api/Service/ProductService.cs</url>
-          <line>12</line>
-          <properties documentPath="$PROJECT_DIR$/ElasticSearch.Api/Service/ProductService.cs" containingFunctionPresentation="Method 'SaveAsync'">
+          <url>file://$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs</url>
+          <line>86</line>
+          <properties documentPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs" containingFunctionPresentation="Method 'TermPrefixQuery'">
             <startOffsets>
-              <option value="468" />
+              <option value="2864" />
             </startOffsets>
             <endOffsets>
-              <option value="496" />
+              <option value="2906" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs</url>
+          <line>91</line>
+          <properties documentPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs" containingFunctionPresentation="Method 'TermRangeQuery'">
+            <startOffsets>
+              <option value="3027" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3254" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs</url>
+          <line>96</line>
+          <properties documentPath="$PROJECT_DIR$/ElasticSearch.Api/Repository/ECommerceRepository.cs" containingFunctionPresentation="Method 'TermRangeQuery'">
+            <startOffsets>
+              <option value="3264" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3306" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
