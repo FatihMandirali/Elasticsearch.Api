@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ElasticSearch.Nest.Api.props" />
+</Project>
