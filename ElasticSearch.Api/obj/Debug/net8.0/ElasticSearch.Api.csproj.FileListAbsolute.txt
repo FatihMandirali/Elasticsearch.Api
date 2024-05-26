@@ -5,10 +5,8 @@
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.runtimeconfig.json
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.dll
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/ElasticSearch.Api.pdb
-/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Elasticsearch.Net.dll
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Microsoft.OpenApi.dll
-/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Nest.dll
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -34,3 +32,5 @@
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.pdb
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/obj/Debug/net8.0/ElasticSearch.Api.genruntimeconfig.cache
 /Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/obj/Debug/net8.0/ref/ElasticSearch.Api.dll
+/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Elastic.Clients.Elasticsearch.dll
+/Users/fatihmandirali/Documents/ws/lessons/elasticsearch/ElasticSearch.Nest.Api/ElasticSearch.Api/bin/Debug/net8.0/Elastic.Transport.dll

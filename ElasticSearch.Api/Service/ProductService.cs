@@ -1,7 +1,7 @@
 using System.Net;
+using Elastic.Clients.Elasticsearch;
 using ElasticSearch.Nest.Api.DTO;
 using ElasticSearch.Nest.Api.Repository;
-using Nest;
 
 namespace ElasticSearch.Nest.Api.Service;
 
@@ -70,7 +70,7 @@ public sealed class ProductService(ProductRepository productRepository, ILogger<
         var deleteResponse = await productRepository.DeleteAsync(id);
 
 
-        if(!deleteResponse.IsValid && deleteResponse.Result==Result.NotFound)
+        if(!deleteResponse.IsSuccess() && deleteResponse.Result==Result.NotFound)
         {
             _logger.LogError("silinemediiii");
 
@@ -79,9 +79,10 @@ public sealed class ProductService(ProductRepository productRepository, ILogger<
         }
 
 
-        if(!deleteResponse.IsValid)
+        if(!deleteResponse.IsSuccess())
         {
-            _logger.LogError(deleteResponse.OriginalException, deleteResponse.ServerError.Error.ToString());
+            deleteResponse.TryGetOriginalException(out Exception exception);
+            _logger.LogError(exception, deleteResponse.ElasticsearchServerError.Error.ToString());
             return ResponseDto<bool>.Fail(new List<string> { "silme esnasında bir hata meydana geldi." }, System.Net.HttpStatusCode.InternalServerError);
         }
         

@@ -1,11 +1,9 @@
 using ElasticSearch.Nest.Api.DTO;
-using Nest;
 
 namespace ElasticSearch.Nest.Api.Model;
 
 public class Product
 {
-    [PropertyName("_id")] 
     public string Id { get; set; }
     public string Name { get; set; } 
     public decimal Price { get; set; }

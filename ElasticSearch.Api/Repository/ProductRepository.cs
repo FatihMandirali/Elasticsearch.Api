@@ -1,18 +1,20 @@
 using System.Collections.Immutable;
+using Elastic.Clients.Elasticsearch;
+using Elastic.Clients.Elasticsearch.QueryDsl;
+using Elastic.Transport.Extensions;
 using ElasticSearch.Nest.Api.DTO;
 using ElasticSearch.Nest.Api.Model;
-using Nest;
 
 namespace ElasticSearch.Nest.Api.Repository;
 
-public sealed class ProductRepository(ElasticClient elasticClient)
+public sealed class ProductRepository(ElasticsearchClient elasticClient)
 {
     private const string indexName = "products";
     public async Task<Product?> SaveAsync(Product newProduct)
     {
         newProduct.Created = DateTime.Now;
         var response = await elasticClient.IndexAsync(newProduct,x=>x.Index(indexName).Id(Guid.NewGuid().ToString()));
-        if (!response.IsValid) return null;
+        if (!response.IsSuccess()) return null;
         newProduct.Id = response.Id;
         return newProduct;
     }
@@ -21,7 +23,7 @@ public sealed class ProductRepository(ElasticClient elasticClient)
     {
 
         var result = await elasticClient.SearchAsync<Product>(
-            s => s.Index(indexName).Query(q => q.MatchAll()
+            s => s.Index(indexName).Query(q => q.MatchAll(new MatchAllQuery())
             ));
 
         foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
@@ -32,7 +34,7 @@ public sealed class ProductRepository(ElasticClient elasticClient)
     {
         var response = await elasticClient.GetAsync<Product>(id, x => x.Index(indexName));
 
-        if(!response.IsValid)
+        if(!response.IsSuccess())
         {
             return null;
         }
@@ -44,10 +46,9 @@ public sealed class ProductRepository(ElasticClient elasticClient)
     
     public async Task<bool> UpdateAsync(ProductUpdateDto updateProduct)
     {
-        var response = await elasticClient.UpdateAsync<Product, ProductUpdateDto>(updateProduct.Id, x =>
-            x.Index(indexName).Doc(updateProduct));
+        var response = await elasticClient.UpdateAsync<Product, ProductUpdateDto>(indexName,updateProduct.Id,x=>x.Doc(updateProduct));
 
-        return response.IsValid;
+        return response.IsSuccess();
     }
     
     /// <summary>
