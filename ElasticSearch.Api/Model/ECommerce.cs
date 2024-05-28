@@ -16,6 +16,10 @@ public class ECommerce
     [JsonPropertyName("customer_full_name")]
     public string CustomerFullName { get; set; }
     
+    [JsonPropertyName("taxful_total_price")]
+    
+    public double TaxfulTotalPrice { get; set; }
+    
     [JsonPropertyName("category")]
     public string[] Category { get; set; }
     

@@ -50,4 +50,60 @@ public class ECommerceController(ECommerceRepository _eCommerceRepository) : Bas
     {
         return Ok(await _eCommerceRepository.MatchQueryFullTextAsync(value));
     }
+    [HttpGet]
+    public async Task<IActionResult> MatchQueryFullText(string category)
+    {
+
+        return Ok(await _eCommerceRepository.MatchQueryFullTextAsync(category));
+
+    }
+
+
+    [HttpGet]
+    public async Task<IActionResult> MatchBoolPrefixQueryFullText(string customerFullName)
+    {
+
+        return Ok(await _eCommerceRepository.MatchBoolPrefixFullTextAsync(customerFullName));
+
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> MatchPhraseQueryFullText(string customerFullName)
+    {
+
+        return Ok(await _eCommerceRepository.MatchPhraseFullTextAsync(customerFullName));
+
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> MatchPhrasePrefixQueryFullText(string customerFullName)
+    {
+
+        return Ok(await _eCommerceRepository.MatchPhrasePrefixFullTextAsync(customerFullName));
+
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> CompoundQueryExampleOne(string cityName, double taxfulTotalPrice, string categoryName, string menufacturer)
+    {
+
+        return Ok(await _eCommerceRepository.CompoundQueryExampleOneAsync(cityName,taxfulTotalPrice,categoryName,menufacturer));
+
+    }
+
+
+    [HttpGet]
+    public async Task<IActionResult> CompoundQueryExampleTwo(string customerFullName)
+    {
+
+        return Ok(await _eCommerceRepository.CompoundQueryExampleTwoAsync(customerFullName));
+
+    }
+    [HttpGet]
+    public async Task<IActionResult> MultiMatchQueryFullText(string name)
+    {
+
+        return Ok(await _eCommerceRepository.MultiMatchQueryFullTextAsync(name));
+
+    }
 }

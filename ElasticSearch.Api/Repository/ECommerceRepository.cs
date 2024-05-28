@@ -145,6 +145,131 @@ public class ECommerceRepository(ElasticsearchClient _elasticsearchClient)
         return result.Documents.ToImmutableList();
 
     }
+		public async Task<ImmutableList<ECommerce>> MultiMatchQueryFullTextAsync(string name)
+		{
+
+
+			var result = await _elasticsearchClient.SearchAsync<ECommerce>(s => s.Index(indexName)
+				.Size(1000).Query(q => q
+					.MultiMatch(mm =>
+						mm.Fields(new Field("customer_first_name")
+							.And(new Field("customer_last_name"))
+							.And(new Field("customer_full_name")))
+							.Query(name))));
+
+			foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
+			return result.Documents.ToImmutableList();
+
+		}
+
+		public async Task<ImmutableList<ECommerce>> MatchBoolPrefixFullTextAsync(string customerFullName)
+		{
+
+			var result = await _elasticsearchClient.SearchAsync<ECommerce>(s => s.Index(indexName)
+				.Size(1000).Query(q => q
+					.MatchBoolPrefix(m => m
+						.Field(f => f.CustomerFullName)
+						.Query(customerFullName))));
+
+			foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
+			return result.Documents.ToImmutableList();
+
+		}
+
+
+		public async Task<ImmutableList<ECommerce>> MatchPhraseFullTextAsync(string customerFullName)
+		{
+
+			var result = await _elasticsearchClient.SearchAsync<ECommerce>(s => s.Index(indexName)
+				.Size(1000).Query(q => q
+					.MatchPhrase(m => m
+						.Field(f => f.CustomerFullName)
+						.Query(customerFullName))));
+
+			foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
+			return result.Documents.ToImmutableList();
+
+		}
+
+		public async Task<ImmutableList<ECommerce>> MatchPhrasePrefixFullTextAsync(string customerFullName)
+		{
+
+			var result = await _elasticsearchClient.SearchAsync<ECommerce>(s => s.Index(indexName)
+				.Size(1000).Query(q => q
+					.MatchPhrasePrefix(m => m
+						.Field(f => f.CustomerFullName)
+						.Query(customerFullName))));
+
+			foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
+			return result.Documents.ToImmutableList();
+
+		}
+
+
+		public async Task<ImmutableList<ECommerce>> CompoundQueryExampleOneAsync(string cityName,double taxfulTotalPrice,string categoryName,string menufacturer)
+		{
+
+			var result = await _elasticsearchClient.SearchAsync<ECommerce>(s => s.Index(indexName)
+				.Size(1000).Query(q => q
+					.Bool(b => b
+						.Must(m => m
+							.Term(t => t
+								.Field("geoip.city_name")
+								.Value(cityName)))
+						.MustNot(mn => mn
+							.Range(r => r
+								.NumberRange(nr => nr
+									.Field(f => f.TaxfulTotalPrice)
+									.Lte(taxfulTotalPrice))))
+						.Should(s => s.Term(t => t
+							.Field(f => f.Category.Suffix("keyword"))
+							.Value(categoryName)))
+						.Filter(f => f
+							.Term(t => t
+								.Field("manufacturer.keyword")
+								.Value(menufacturer))))
+
+
+				));
+
+			foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
+			return result.Documents.ToImmutableList();
+
+		}
+
+
+
+		public async Task<ImmutableList<ECommerce>> CompoundQueryExampleTwoAsync(string customerFullName)
+		{
+
+			
+
+
+			//var result = await _client.SearchAsync<ECommerce>(s => s.Index(indexName)
+			//	.Size(1000).Query(q =>q.MatchPhrasePrefix(m=>m.Field(f=>f.CustomerFullName).Query(customerFullName))));
+
+		
+
+
+			var result = await _elasticsearchClient.SearchAsync<ECommerce>(s => s.Index(indexName)
+				.Size(1000).Query(q => q
+					.Bool(b => b
+						.Should(m => m
+							.Match(m => m
+								.Field(f => f.CustomerFullName)
+								.Query(customerFullName))
+							.Prefix(p => p
+								.Field(f => f.CustomerFullName.Suffix("keyword"))
+								.Value(customerFullName))))));
+
+
+
+
+
+			foreach (var hit in result.Hits) hit.Source.Id = hit.Id;
+			return result.Documents.ToImmutableList();
+
+		}
 
     #endregion
    
